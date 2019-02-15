@@ -9,4 +9,8 @@ follows
 see LICENSE
 
 ## Todo
-* Basic docker container
+Basic docker container with
+* ArchLinux Image
+* Minimal required libraries
+* Deployment of a given WRF version
+* Usable for calculating a given forecast period
