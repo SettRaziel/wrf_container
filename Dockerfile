@@ -9,4 +9,4 @@ RUN echo 'wrfuser ALL = NOPASSWD: /bin/pacman' << /etc/sudoers
 USER wrfuser
 WORKDIR /home/wrfuser
 RUN git clone https://github.com/SettRaziel/wrf_archlinux.git
-RUN cd wrf_archlinux/wrf_deploy/ && ./deploy_wrf.sh && sudo pacman --noconfirm -Rsn $(sudo pacman -Qdtq) && sudo pacman --noconfirm -Sc
+RUN cd wrf_archlinux/wrf_deploy/ && ./deploy_wrf.sh && sudo pacman --noconfirm -Sc
